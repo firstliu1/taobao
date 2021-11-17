@@ -1,24 +1,14 @@
 a{
 	text-decoration: none;
-<<<<<<< HEAD
 	cursor: pointer;
-=======
->>>>>>> 0ea6a4176378edb44a10bc14bd6d40f10b2e7f57
 }
 body{
 	min-width:1200px;
 	width:100%;
-<<<<<<< HEAD
 	height: 80rem;
 	font-size: 0.2rem;
 	margin:0 auto;
 	background-color:#E8E2E0;
 	position: relative;
-=======
-	height: 4800px;
-	font-size: 0.2rem;
-	margin:0 auto;
-	background-color:#E8E2E0;
->>>>>>> 0ea6a4176378edb44a10bc14bd6d40f10b2e7f57
 }
 	
