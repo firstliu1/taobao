@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script src="../js/jquery.js"></script>
+		<script src="../js/flexible.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-top">
+				<div class="top_zuo">
+					<img src="../img/logo.png">
+				</div>
+				<div class="top_you">
+					<span>"登录页面"改进建议</span>
+					<span class="iconfont icon-xiaoxi"></span>
+				</div>
+			</div>
+			<div class="login-newbg">
+				<div class="login-dl">
+					<div class="dl-bt">
+						<span>密码登录</span>
+						<div class="dl-bt-zh">
+							<div>
+								<label class="iconfont icon-yonghu"></label>
+							</div>
+							<input type="text" class="yhm" placeholder=" 用户名" value="admin" />
+						</div>
+						<div class="dl-bt-mm">
+							<div>
+								<label class="iconfont icon-mima"></label>
+							</div>
+							<input type="password" class="mm" placeholder=" 请输入登录密码" value="123" />
+						</div>
+						<div class="denglu">
+							登录
+						</div>
+						<div class="denglu-zc">
+							<a>忘记密码</a>
+							<a>免费注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			let btnList = document.querySelector(".denglu");
+
+			function ajax(url, type, param) {
+				return new Promise(function(resolve, reject) {
+					//创建请求对象
+					let req = new XMLHttpRequest();
+					//设置请求类型和路径
+					req.open(type, url);
+					//设置请求头
+					req.setRequestHeader("Content-Type",
+						"application/x-www-form-urlencoded");
+					//发送请求
+					req.send(param);
+					//监听服务端响应的事件
+					req.onreadystatechange = function() {
+						//判断响应是否完成
+						if (req.status == 200 &&
+							req.readyState == 4) {
+							//把返回的json字符串转换为json对象
+							let obj = req.responseText;
+							if (obj == 1) {
+								resolve(obj);
+							} else {
+								reject(obj);
+							}
+						}
+					}
+				});
+			}
+			btnList.onclick = async () => {
+				let zh = document.querySelector(".yhm").value;
+				let mm = document.querySelector(".mm").value;
+				let url = "http://localhost:8080/account/login?username=" + zh + "&userpwd=" + mm;
+				let type = "post";
+				try {
+					let data1 = await ajax(url, type, null);
+					alert("登陆成功");
+					location.href = "../index.html";
+				} catch (e) {
+					alert("登陆失败");
+					location.reload();
+				}
+
+
+			}
+		</script>
+	</body>
+</html>

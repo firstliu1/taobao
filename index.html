@@ -6,120 +6,9 @@
 			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="./css/public.css" />
 		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<script src="js/jquery.js"></script>
 		<script src="./js/flexible.js"></script>
 		<title></title>
-		<script src="./js/flexible.js"></script>
-		<title></title>
-		<style>
-			.header {
-				width: 100%;
-				height: 0.613rem;
-				background-color: #f5f5f5;
-				font-size: 0.22rem !important;
-			}
-
-			.header-hea {
-				width: 22rem;
-				height: 0.613rem;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-around;
-				line-height: 0.6rem;
-			}
-
-			.header-jiantou {
-				width: 0.1rem;
-				height: 0.1rem;
-				border-bottom: 0.02rem solid black;
-				border-right: 0.02rem solid black;
-				transform: rotate(45deg);
-				margin-top: 0.2rem;
-			}
-
-			.header-zhongxian {
-				height: 0.3rem;
-				border-left: 0.01rem solid black;
-				margin-top: 0.14rem;
-			}
-
-			.header-denglu {
-				color: #f22e00;
-			}
-
-			a:hover {
-				text-decoration: none
-			}
-
-			.header-kong {
-				width: 7rem;
-			}
-
-			.header-ys:hover {
-				color: #f22e00;
-			}
-
-			.header-img1 {
-				margin-right: -0.16rem;
-				margin-top: 0.11rem;
-				width: 0.35rem;
-				height: 0.35rem;
-				background-image: url(img/gwc.png);
-				background-size: 100% 100%;
-			}
-
-			.header-img2 {
-				margin-right: -0.2rem;
-				margin-top: 0.11rem;
-				width: 0.4rem;
-				height: 0.4rem;
-				background-image: url(img/shoucang.png);
-				background-size: 100% 100%;
-			}
-
-			.sousuo {
-				width: 20rem;
-				height: 2.4rem;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-around;
-			}
-
-			.sousuo img:first-child {
-				width: 2.8rem;
-				height: 1.2rem;
-				margin-top: 0.6rem;
-			}
-
-			.sousuo-sou {
-				width: 15rem;
-				height: 1.4rem;
-				margin-top: 0.6rem;
-			}
-
-			.sousuo div:nth-child(3) {
-				width: 1.3rem;
-				height: 1.5rem;
-				margin-top: 0.6rem;
-				background-color: antiquewhite;
-			}
-
-			.sousuo-kuang {
-				margin: 0 auto;
-				width: 80%;
-				height: 58%;
-				background-color: white;
-				border: 0.01rem solid #F22E00;
-				border-radius: 1rem;
-				display: flex;
-				justify-content: space-around;
-			}
-
-			.sousuo-kuang-ms {
-				width: 1rem;
-				height: 100%;
-				border-right: 0.01 solid red;
-			}
-		</style>
 	</head>
 	<body>
 		<!-- 顶部菜单 -->
@@ -127,7 +16,7 @@
 			<div class="header-hea">
 				<span>中国大陆</span>
 				<span class="header-jiantou"></span>
-				<a class="header-denglu">亲,请登录</a>
+				<a class="header-denglu" href="html/login.html">亲,请登录</a>
 				<a class="header-ys">免费注册</a>
 				<span class="header-ys">手机逛淘宝</span>
 				<!-- 中间空隙 -->
@@ -184,8 +73,373 @@
 		</div>
 
 		<div class="sp">
-
+			<!-- 商品导航栏 -->
+			<div class="sp-header">
+				<div class="sp-header-zuo">
+					<h2>主题市场</h2>
+				</div>
+				<div class="sp-header-zhong">
+					<a>天猫</a>
+					<a>聚划算</a>
+					<a>天猫超市</a>
+					<span></span>
+					<a>司法拍卖</a>
+					<a>飞猪旅行</a>
+					<a>天天特卖</a>
+					<span></span>
+					<a>造点新货</a>
+					<a>苏宁易购</a>
+					<a>淘宝心选</a>
+					<a>智能生活</a>
+				</div>
+				<div class="sp-header-you"></div>
+			</div>
+			<!-- 商品分类 -->
+			<div class="sp-fenlei">
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-nvzhuang1"></i>
+					<div class="icon-ic">
+						<a>女装</a>
+						<span>/</span>
+						<a>内衣</a>
+						<span>/</span>
+						<a>家居</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-shoes"></i>
+					<div class="icon-ic">
+					<a>女鞋</a>
+					<span>/</span>
+					<a>男鞋</a>
+					<span>/</span>
+					<a>箱包</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-muying"></i>
+					<div class="icon-ic">
+					<a>母婴</a>
+					<span>/</span>
+					<a>童装</a>
+					<span>/</span>
+					<a>玩具</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-nanzhuang"></i>
+					<div class="icon-ic">
+					<a>男装</a>
+					<span>/</span>
+					<a>运动户外</a>
+					<span></span>
+					<a> </a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-huabanfuben"></i>
+					<div class="icon-ic">
+					<a>美妆</a>
+					<span>/</span>
+					<a>彩妆</a>
+					<span>/</span>
+					<a>个护</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-shouji"></i>
+					<div class="icon-ic">
+					<a>手机</a>
+					<span>/</span>
+					<a>数码</a>
+					<span>/</span>
+					<a>企业</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-dajiadian"></i>
+					<div class="icon-ic">
+					<a>大家电</a>
+					<span>/</span>
+					<a>生活电器</a>
+					<span></span>
+					<a> </a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-lingshi"></i>
+					<div class="icon-ic">
+					<a>零食</a>
+					<span>/</span>
+					<a>生鲜</a>
+					<span>/</span>
+					<a>茶酒</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-chuju"></i>
+					<div class="icon-ic">
+					<a>厨具</a>
+					<span>/</span>
+					<a>收纳</a>
+					<span>/</span>
+					<a>清洁</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-jiajujiafang"></i>
+					<div class="icon-ic">
+					<a>家纺</a>
+					<span>/</span>
+					<a>家饰</a>
+					<span>/</span>
+					<a>鲜花</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-mybook"></i>
+					<div class="icon-ic">
+					<a>图书音像</a>
+					<span>/</span>
+					<a>文具</a>
+					<span></span>
+					<a> </a>
+					</div>
+				</div>
+				
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-yiyaobaojian"></i>
+					<div class="icon-ic">
+					<a>医药保健</a>
+					<span>/</span>
+					<a>进口</a>
+					<span></span>
+					<a> </a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-qiche"></i>
+					<div class="icon-ic">
+					<a>汽车</a>
+					<span>/</span>
+					<a>二手车</a>
+					<span>/</span>
+					<a>用品</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-fangwufangchan"></i>
+					<div class="icon-ic">
+					<a>房产</a>
+					<span>/</span>
+					<a>装修家具</a>
+					<span>/</span>
+					<a>建材</a>
+					</div>
+				</div>
+				<div class="sp-fenlei-tu">
+					<i class="iconfont icon-shoubiao"></i>
+					<div class="icon-ic">
+					<a>手表</a>
+					<span>/</span>
+					<a>眼镜</a>
+					<span>/</span>
+					<a>珠宝饰品</a>
+					</div>
+				</div>
+			</div>
+			<div class="sp-tu">
+				<div class="sp-tu-top">
+					<img src="./img/zhuyelunbo1.jpg" />
+				</div>
+				<div class="sp-tu-zhong">
+					<img src="img/tianmao.png" />
+					<span class="zhong-wz">理想生活上天猫</span>
+					<span class="sp-tu-zhong-wenzi">
+						<span>1</span>/5
+					</span>
+				</div>
+				<div class="sp-tu-bottom">
+					<img src="./img/xiaolunbo1.jpg"/>
+					<img src="img/xiaolunbo2.jpg" />
+				</div>
+			</div>
+			<!-- 用户 -->
+			<div class="sp-yonghu">
+				<img src="./img/touxiang.jpg" >
+				<div class="yonghu-nc">Hi!你好</div>
+				<div class="sp-yonghu-dianji">
+					<div>登录</div>
+					<div>注册</div>
+					<div>开店</div>
+				</div>
+				<img class="yonghu-img" src="./img/yonghudao1.png" />
+				<div class="yonghu-gg">
+					<span>公告</span>
+					<span>新鲜好事儿都在这里~</span>
+				</div>
+				<div class="yonghu-gz">
+					<span>规则</span>
+					<span>202年淘宝11.11招商规则</span>
+				</div>
+				<div class="yonghu-rd">
+					<span>热点</span>
+					<span>关于推进"清明"账号乱想专项整治的通知</span>
+				</div>
+				<div class="yonghu-rd">
+					<span>热点</span>
+					<span>《淘宝平台违禁信息管理规则》规则变更通知</span>
+				</div>
+				
+				<div class="yonghu-bottom">
+					<div class="yonghu-bottom-bao">
+						<span class="iconfont icon-shoucang"></span>
+						<p>收藏的宝贝</p>
+					</div>
+					<div class="yonghu-bottom-mai">
+						<span class="iconfont icon-dianpu"></span>
+						<p>买过的店铺</p>
+					</div>
+					<div class="yonghu-bottom-dp">
+						<span class="iconfont icon-shangcheng"></span>
+						<p>收藏的店铺</p>
+					</div>
+					<div class="yonghu-bottom-zuji">
+						<span class="iconfont icon-zuji"></span>
+						<p>我的足迹</p>
+					</div>
+				</div>
+			</div>
+			<div class="biaoti">
+				<span>有好货</span>
+				<img src="./img/qmkb.png" />
+			</div>
+			<div class="biaoti-sp">
+				<div class="biaoti-sp-shi">
+					<img src="./img/sp1.webp" />
+					<span>同车同伴车载头枕腰靠</span>
+					<span>一路行车,如果是不不适相伴</span>
+				</div>
+				<div class="biaoti-sp-shi">
+					<img src="./img/sp2.webp" />
+					<span>SINOMAX海绵床垫</span>
+					<span>来自香港的品牌————赛诺</span>
+				</div>
+				<div class="biaoti-sp-shi">
+					<img src="./img/sp3.webp" />
+					<span>好孩子 儿童安全座椅</span>
+					<span>侧撞防护系统,搭配宽大的</span>
+				</div>
+				<div class="biaoti-sp-shi">
+					<img src="./img/sp4.webp" />
+					<span>只需翻转一下,就能安排你</span>
+					<span>用这个计时器,做饭学习</span>
+				</div>
+				<div class="biaoti-sp-shi">
+					<img src="./img/sp5.webp" />
+					<span>鬼塚虎 麂皮材质运动鞋</span>
+					<span>此款跑鞋采用了麂皮材质打造鞋面，提供出色的缓震性能，缔造出色缓降性能。</span>
+				</div>
+			</div>
+			
+			<div class="cainixihuan">
+				<span>猜你喜欢</span>
+				<img src="./img/gxtj.png" />
+			</div>
+			
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp8.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp9.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp10.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp11.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp12.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp13.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp14.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			<div class="xihuan-sp">
+				<img src="./img/sp6.webp"/>
+				<span>23456号韩国蒸蛋大酱汤石锅拌饭部队锅参鸡汤专用石锅土豆粉砂锅</span>
+				<span>￥</span>
+				<span>18</span>
+			</div>
+			
+			
 		</div>
-	>
+		<script type="text/javascript" src="js/xiangjs/index.js"></script>
 	</body>
 </html>
